@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body header li {
+  list-style: none;
+}
+
+body .logo img {
+  margin-top: -35px;
+  max-width: 395px;
+  max-height: 182px;
+}
+
+body .auto-container {
+  background: #F9F7C7;
+}
+/*# sourceMappingURL=index.css.map */
