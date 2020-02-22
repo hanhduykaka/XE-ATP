@@ -14,13 +14,13 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'npm install'
-                sh 'npm run build'
+               
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploy...'
-                sh 'npm run deploy:prod'
+                 sh 'npm run build'
             }
         }
     }
