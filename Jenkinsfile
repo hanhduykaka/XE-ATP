@@ -7,8 +7,13 @@ pipeline {
     }
     stages {
         stage('Build') { 
+            
             steps {
-                sh 'npm install' 
+                withCredentials([usernamePassword(
+                    credentialsId: '5e0f286c-c849-499c-b59b-ab05f5c1aa6f'
+                )]) {
+                    sh 'npm install' 
+                }
             }
         }
     }
